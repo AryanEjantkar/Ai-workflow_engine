@@ -1,0 +1,11 @@
+{
+  "include": ["app"],
+  "extraPaths": ["./app"],
+  "reportMissingImports": false,
+  "executionEnvironments": [
+    {
+      "root": "app",
+      "extraPaths": ["../"]
+    }
+  ]
+}
