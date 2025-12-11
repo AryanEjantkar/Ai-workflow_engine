@@ -5,6 +5,9 @@ from app.graph_engine.graph_store import save_graph, get_graph, save_run, get_ru
 from app.workflows.code_review_flow import create_code_review_workflow
 
 app = FastAPI()
+@app.get("/")
+def home():
+    return {"message": "AI Workflow Engine is running!"}
 
 
 @app.post("/graph/create")
